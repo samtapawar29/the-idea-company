@@ -1,0 +1,105 @@
+.market-section {
+    background: #020816;
+    padding: 100px 20px;
+    color: white;
+  }
+  
+  .market-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+  }
+  
+  .market-chart {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .circle {
+    border-radius: 50%;
+    border: 2px solid #d4af37;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tam {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .sam {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .som {
+    width: 110px;
+    height: 110px;
+    background: rgba(212, 175, 55, 0.15);
+  }
+  
+  .market-content {
+    flex: 1;
+  }
+  
+  .market-tag {
+    color: #d4af37;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  
+  .market-content h2 {
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    font-family: "Times New Roman", serif;
+  }
+  
+  .market-text {
+    color: #9aa3b2;
+    line-height: 1.8;
+    margin-bottom: 40px;
+  }
+  
+  .progress-item {
+    margin-bottom: 24px;
+  }
+  
+  .label-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .progress-bar {
+    height: 10px;
+    background: #121827;
+    border-radius: 20px;
+  }
+  
+  .fill {
+    height: 100%;
+    background: #d4af37;
+    border-radius: 20px;
+  }
+  
+  .fill-100 { width: 100%; }
+  .fill-80 { width: 80%; }
+  .fill-23 { width: 23%; }
+  .fill-55 { width: 55%; }
+  
+  @media (max-width: 900px) {
+    .market-container {
+      flex-direction: column;
+    }
+  
+    .market-content h2 {
+      font-size: 40px;
+    }
+  }

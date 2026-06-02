@@ -16,17 +16,51 @@ function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <HowItWorks />
-      <Software />
-      <QualityFilter />
-      <MarketOpportunity />
-      <Roadmap />
-      <Results />
-      <Pricing />
-      <Apps />
-      <FAQ />
-      <CTA />
+
+      <section id="hero">
+        <Hero />
+      </section>
+
+      <section id="how-it-works">
+        <HowItWorks />
+      </section>
+
+      <section id="software">
+        <Software />
+      </section>
+
+      <section id="quality-filter">
+        <QualityFilter />
+      </section>
+
+      <section id="market-opportunity">
+        <MarketOpportunity />
+      </section>
+
+      <section id="roadmap">
+        <Roadmap />
+      </section>
+
+      <section id="results">
+        <Results />
+      </section>
+
+      <section id="pricing">
+        <Pricing />
+      </section>
+
+      <section id="apps">
+        <Apps />
+      </section>
+
+      <section id="faq">
+        <FAQ />
+      </section>
+
+      <section id="cta">
+        <CTA />
+      </section>
+
       <Footer />
     </>
   );

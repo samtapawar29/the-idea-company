@@ -1,6 +1,9 @@
 import "../styles/CTA.css";
+import { useNavigate } from "react-router-dom";
 
 export default function CTASection() {
+  const navigate = useNavigate();
+
   return (
     <section className="cta-section">
       <div className="overlay"></div>
@@ -20,9 +23,11 @@ export default function CTASection() {
           Most founders wish they'd started sooner.
         </p>
 
-        <button className="cta-button">
-          Sign Up Free — Get Your Idea
-          <span>→</span>
+        <button
+          className="cta-button"
+          onClick={() => navigate("/login")}
+        >
+          Sign Up Free -- Get Your Idea →
         </button>
 
         <p className="cta-note">

@@ -1,16 +1,8 @@
-/* =========================
-   PRICING SECTION
-========================= */
-
 .pricing-section {
     background: #020817;
     color: white;
     padding: 100px 60px;
   }
-  
-  /* =========================
-     HEADER
-  ========================= */
   
   .pricing-header {
     text-align: center;
@@ -41,11 +33,7 @@
     font-size: 20px;
     line-height: 1.7;
   }
-  
-  /* =========================
-     GRID
-  ========================= */
-  
+    
   .pricing-grid {
     max-width: 1280px;
     margin: auto;
@@ -149,7 +137,7 @@
   }
   
   .subtitle {
-    color: #d4af37;
+    color: #8f98ab;
     font-size: 14px;
     margin-bottom: 30px;
   }
@@ -272,4 +260,13 @@
     .pricing-card {
       padding: 28px;
     }
+  }
+
+  .pricing-note {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 48px;
+    line-height: 1.6;
   }

@@ -32,7 +32,7 @@ export default function Software() {
           </div>
 
           <div className="browser-text">
-            school-of-entrepreneurs.app / dashboard
+            the-idea-company.app / dashboard
           </div>
         </div>
 

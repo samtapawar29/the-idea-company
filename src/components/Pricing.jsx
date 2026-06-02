@@ -119,7 +119,8 @@ export default function Pricing() {
             <ul>
               {plan.features.map((item, i) => {
                 const isLocked =
-                  item.toLowerCase().includes("locked");
+                item === "Full Idea Reports locked" ||
+                item === "Execution Plans locked";
 
                 return (
                   <li
@@ -147,6 +148,10 @@ export default function Pricing() {
           </div>
         ))}
       </div>
+
+      <p className="pricing-note">
+        No credit card required to sign up. Upgrade anytime. Cancel anytime.
+      </p>
     </section>
   );
 }

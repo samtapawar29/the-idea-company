@@ -52,11 +52,13 @@ function Navbar() {
         </button>
 
         <button
-          className="signup-btn"
-          onClick={() => navigate("/login")}
-        >
-          Sign Up Free
-        </button>
+  className="signup-btn"
+  onClick={() =>
+    window.location.href = "https://thinkers.theideacompany.co/login"
+  }
+>
+  Sign Up Free
+</button>
       </div>
     </nav>
   );

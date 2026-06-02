@@ -25,10 +25,12 @@ export default function CTASection() {
 
         <button
           className="cta-button"
-          onClick={() => navigate("/login")}
+          onClick={() => {
+          window.location.href = "https://thinkers.theideacompany.co/login";
+    }}
         >
-          Sign Up Free -- Get Your Idea →
-        </button>
+  Sign Up Free -- Get Your Idea →
+</button>
 
         <p className="cta-note">
           🛡 Free to start. 30-day money-back guarantee.

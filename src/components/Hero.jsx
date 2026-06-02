@@ -39,11 +39,14 @@ function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <button 
-          className="primary-btn"
-          onClick={() => navigate("/login")}>
-            Sign Up — It's Free →
-          </button>
+        <button
+         className="primary-btn"
+         onClick={() =>
+             window.location.href = "https://thinkers.theideacompany.co/login"
+          }
+        >
+  Sign Up — It's Free →
+</button>
 
           <button className="secondary-btn"
           onClick={scrollToHowItWorks}>

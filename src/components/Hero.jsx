@@ -1,7 +1,21 @@
 import "../styles/Hero.css";
 import IdeaCard from "./IdeaCard";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+    const navigate = useNavigate();
+
+    const scrollToHowItWorks = () => {
+        const section = document.getElementById("how-it-works");
+    
+        if (section) {
+          section.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      };
+
   return (
     <section className="hero">
 
@@ -25,11 +39,14 @@ function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <button className="primary-btn">
+          <button 
+          className="primary-btn"
+          onClick={() => navigate("/login")}>
             Sign Up — It's Free →
           </button>
 
-          <button className="secondary-btn">
+          <button className="secondary-btn"
+          onClick={scrollToHowItWorks}>
             How It Works
           </button>
         </div>

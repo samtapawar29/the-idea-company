@@ -5,27 +5,27 @@ const faqData = [
   {
     question: "Is this AI-generated garbage or actually useful?",
     answer:
-      "No. Every execution plan is reviewed and verified before delivery to ensure it is practical and actionable.",
+      "Every idea our engine surfaces is stress-tested by our in-house team of research analysts — MBAs, ex-consultants, and operators who have worked inside real startups. They verify market size, competitive landscape, and execution feasibility before any idea reaches you. You get analyst-grade intelligence, not hallucinated fluff.",
   },
   {
     question: "How are my ideas unique to me?",
     answer:
-      "The platform analyzes your background, skills, interests, and goals to generate highly personalized opportunities.",
+      "Our engine cross-references your background, skills, geography, available capital, and risk tolerance against a database of 40,000+ market signals. The combination is mathematically unique. No two users receive the same idea set.",
   },
   {
     question: "What exactly does the execution plan include?",
     answer:
-      "You receive step-by-step actions, market validation insights, growth strategies, and implementation guidance.",
+      "Each execution plan covers: legal entity setup, initial product or service architecture, go-to-market strategy, first 90 days of customer acquisition, unit economics model, hiring milestones, funding strategy, and a risk register. It reads like a strategy deck from a top consulting firm — built specifically for your idea.",
   },
   {
     question: "Do I need business experience to use this?",
     answer:
-      "No. The platform is designed for beginners as well as experienced founders.",
+      "No. The execution plans are written to be followed by a first-time founder. Every step is explained, every term is defined, and every action item is sequenced. If you can follow instructions, you can execute the plan.",
   },
   {
     question: "What if I don't like the ideas generated for me?",
     answer:
-      "Our money-back guarantee ensures you can request a refund if the plan does not meet your expectations.",
+      "You can regenerate as many times as you want within your plan, adjusting parameters like industry, capital requirement, or time-to-revenue. If after 30 days you feel the software hasn't delivered value, we refund every penny — no forms, no friction.",
   },
 ];
 

@@ -55,7 +55,7 @@
   }
   
   .market-content h2 {
-    font-size: 50px;
+    font-size: clamp(32px, 5vw, 50px);
     line-height: 1.1;
     margin-bottom: 25px;
     font-family: "Times New Roman", serif;
@@ -94,12 +94,118 @@
   .fill-23 { width: 23%; }
   .fill-55 { width: 55%; }
   
-  @media (max-width: 900px) {
+  /* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
     .market-container {
-      flex-direction: column;
+      gap: 50px;
     }
   
-    .market-content h2 {
-      font-size: 40px;
+    .tam {
+      width: 260px;
+      height: 260px;
+    }
+  
+    .sam {
+      width: 170px;
+      height: 170px;
+    }
+  
+    .som {
+      width: 95px;
+      height: 95px;
+    }
+  }
+  
+  
+  /* =========================
+     MOBILE
+  ========================= */
+  
+  @media (max-width: 768px) {
+  
+    .market-section {
+      padding: 70px 20px;
+    }
+  
+    .market-container {
+      flex-direction: column;
+      text-align: center;
+      gap: 40px;
+    }
+  
+    .market-content {
+      width: 100%;
+    }
+  
+    .market-text {
+      margin-bottom: 30px;
+    }
+  
+    .label-row {
+      font-size: 14px;
+    }
+  
+    .tam {
+      width: 220px;
+      height: 220px;
+    }
+  
+    .sam {
+      width: 145px;
+      height: 145px;
+    }
+  
+    .som {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  
+  
+  /* =========================
+     SMALL MOBILE
+  ========================= */
+  
+  @media (max-width: 480px) {
+  
+    .market-section {
+      padding: 60px 16px;
+    }
+  
+    .market-tag {
+      font-size: 12px;
+      letter-spacing: 1.5px;
+    }
+  
+    .market-text {
+      font-size: 14px;
+      line-height: 1.7;
+    }
+  
+    .tam {
+      width: 180px;
+      height: 180px;
+    }
+  
+    .sam {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .som {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .label-row {
+      font-size: 13px;
+    }
+  
+    .progress-bar {
+      height: 8px;
     }
   }

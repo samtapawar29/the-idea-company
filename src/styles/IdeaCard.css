@@ -1,5 +1,6 @@
 .idea-card{
-    width:420px;
+    width:100%;
+    max-width:420px;
     background:#071226;
     border:1px solid rgba(212,175,55,.25);
     border-radius:24px;
@@ -156,12 +157,12 @@
     font-size:10px;
   }
   
-  ul{
+  .idea-card ul{
     margin-top:12px;
     list-style:none;
   }
   
-  ul li{
+  .idea-card ul li{
     color:#9aa4b7;
     margin-bottom:6px;
     font-size:13px;
@@ -215,5 +216,116 @@
     to{
       opacity:1;
       transform:translateY(0);
+    }
+  }
+
+  /* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px){
+
+    .idea-card{
+      max-width:380px;
+    }
+  
+    .title-row h2{
+      font-size:22px;
+    }
+  
+    .score-box h3{
+      font-size:30px;
+    }
+  }
+  
+  
+  /* =========================
+     MOBILE
+  ========================= */
+  
+  @media (max-width: 768px){
+  
+    .idea-card{
+      max-width:100%;
+    }
+  
+    .card-content{
+      padding:15px;
+    }
+  
+    .title-row{
+      flex-direction:column;
+      gap:10px;
+    }
+  
+    .score-box{
+      text-align:left;
+    }
+  
+    .info-grid{
+      grid-template-columns:1fr;
+    }
+  
+    .title-row h2{
+      font-size:22px;
+    }
+  
+    .score-box h3{
+      font-size:28px;
+    }
+  
+    .market-size h4,
+    .revenue h4{
+      font-size:18px;
+    }
+  }
+  
+  
+  /* =========================
+     SMALL MOBILE
+  ========================= */
+  
+  @media (max-width: 480px){
+  
+    .idea-card{
+      border-radius:18px;
+    }
+  
+    .card-top{
+      padding:0 15px;
+    }
+  
+    .card-top span{
+      font-size:13px;
+    }
+  
+    .verified{
+      font-size:11px;
+    }
+  
+    .title-row h2{
+      font-size:20px;
+    }
+  
+    .title-row p{
+      font-size:12px;
+    }
+  
+    .market-box p{
+      font-size:12px;
+    }
+  
+    .market-size h4,
+    .revenue h4{
+      font-size:16px;
+    }
+  
+    ul li{
+      font-size:12px;
+    }
+  
+    .card-content button{
+      height:42px;
+      font-size:13px;
     }
   }

@@ -43,7 +43,7 @@ body {
 
 .guarantee-section h1 {
   font-family: "Playfair Display", serif;
-  font-size: 40px;
+  font-size: clamp(26px, 5vw, 40px);
   line-height: 1.1;
   margin-bottom: 30px;
   color: #ffffff;
@@ -56,3 +56,57 @@ body {
   line-height: 1.7;
 }
 
+/* Tablet */
+@media (max-width: 1024px) {
+    .guarantee-section {
+      padding: 80px 30px;
+    }
+  
+    .guarantee-section h1 {
+      font-size: 34px;
+    }
+  }
+  
+  /* Mobile */
+  @media (max-width: 768px) {
+    .guarantee-section {
+      min-height: auto;
+      padding: 70px 20px;
+    }
+  
+    .shield {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 30px;
+    }
+  
+    .guarantee-section h1 {
+      font-size: 30px;
+      line-height: 1.2;
+    }
+  
+    .guarantee-section p {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+  }
+  
+  /* Small Mobile */
+  @media (max-width: 480px) {
+    .guarantee-section {
+      padding: 60px 16px;
+    }
+  
+    .shield {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .guarantee-section h1 {
+      font-size: 26px;
+    }
+  
+    .guarantee-section p {
+      font-size: 13px;
+    }
+  }

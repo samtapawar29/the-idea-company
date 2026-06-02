@@ -1,13 +1,16 @@
-.navbar{
-    height:80px;
-    background:#050912;
-  
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-  
-    padding:0 80px;
-  }
+    .navbar {
+        height: 80px;
+        background : #050912;
+      
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
+        padding: 0 80px;
+      
+        border-bottom: 1px solid rgba(255,255,255,0.06);
+        backdrop-filter: blur(10px);
+      }
   
   .logo{
     display:flex;
@@ -77,4 +80,92 @@
   
   .nav-btn:hover {
     color: #f4c542;
+  }
+
+  /* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px) {
+
+    .navbar {
+      padding: 0 40px;
+    }
+  
+    .nav-links {
+      gap: 20px;
+    }
+  
+    .logo span {
+      font-size: 18px;
+    }
+  }
+  
+  
+  /* =========================
+     MOBILE
+  ========================= */
+  
+  @media (max-width: 768px) {
+  
+    .navbar {
+      height: auto;
+      padding: 20px;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .logo {
+      justify-content: center;
+    }
+  
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    .nav-links a,
+    .nav-btn {
+      font-size: 14px;
+    }
+  
+    .signup-btn {
+      padding: 10px 20px;
+    }
+  }
+  
+  
+  /* =========================
+     SMALL MOBILE
+  ========================= */
+  
+  @media (max-width: 480px) {
+  
+    .navbar {
+      padding: 16px;
+    }
+  
+    .logo-box {
+      width: 34px;
+      height: 34px;
+    }
+  
+    .logo span {
+      font-size: 16px;
+    }
+  
+    .nav-links {
+      gap: 10px;
+    }
+  
+    .nav-links a,
+    .nav-btn {
+      font-size: 13px;
+    }
+  
+    .signup-btn {
+      width: 100%;
+      max-width: 220px;
+    }
   }

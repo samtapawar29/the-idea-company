@@ -27,8 +27,8 @@
   
     font-family:"Playfair Display", serif;
   
-    font-size:50px;
-    line-height:1.08;
+    font-size:clamp(32px, 5vw, 50px);
+    line-height:1.1;
     font-weight:700;
   
     color:#f8fafc;
@@ -176,41 +176,113 @@
     left:0;
   }
   
-  @media(max-width:1200px){
+  .howitworks .timeline-line {
+    display: none !important;
+  }
+
+  /* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1024px){
+
+    .howitworks{
+      padding:90px 40px;
+    }
+  
+    .how-header{
+      margin-bottom:70px;
+    }
   
     .steps{
       flex-wrap:wrap;
       gap:40px;
+      justify-content:center;
     }
   
-    .step{
-      width:48%;
-    }
-  
-    .timeline-line{
+    .steps::before{
       display:none;
     }
   
-    .how-header h2{
-      font-size:54px;
+    .step{
+      width:45%;
     }
   }
   
-  @media(max-width:768px){
+  
+  /* =========================
+     MOBILE
+  ========================= */
+  
+  @media (max-width: 768px){
+  
+    .howitworks{
+      padding:70px 20px;
+    }
+  
+    .how-header{
+      margin-bottom:50px;
+    }
+  
+    .steps{
+      gap:30px;
+    }
   
     .step{
       width:100%;
+      max-width:500px;
+      margin:0 auto;
     }
   
-    .how-header h2{
-      font-size:42px;
+    .step-circle{
+      width:72px;
+      height:72px;
     }
   
-    .howitworks{
-      padding:20px 24px;
+    .step-circle svg{
+      width:22px;
+      height:22px;
+    }
+  
+    .step-card{
+      min-height:auto;
+      padding:15px;
+    }
+  
+    .step-card li{
+      font-size:12px;
+      line-height:1.8;
     }
   }
-
-  .howitworks .timeline-line {
-    display: none !important;
+  
+  
+  /* =========================
+     SMALL MOBILE
+  ========================= */
+  
+  @media (max-width: 480px){
+  
+    .howitworks{
+      padding:60px 16px;
+    }
+  
+    .section-tag{
+      font-size:12px;
+    }
+  
+    .step h3{
+      font-size:12px;
+    }
+  
+    .yellow{
+      font-size:9px;
+    }
+  
+    .step-card{
+      padding:12px;
+    }
+  
+    .step-card li{
+      font-size:11px;
+    }
   }

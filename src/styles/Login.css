@@ -24,7 +24,7 @@
   .login-title {
     text-align: center;
     color: #f4c542;
-    font-size: 3rem;
+    font-size: clamp(2rem, 6vw, 3rem);
     font-weight: 700;
     margin-bottom: 10px;
   }
@@ -113,4 +113,76 @@
   .copyright {
     margin-top: 25px;
     color: #6b7280;
+  }
+
+  /* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    .login-card {
+      padding: 30px;
+    }
+  
+    .login-title {
+      font-size: 2.5rem;
+    }
+  
+    .login-subtitle {
+      font-size: 1rem;
+    }
+  
+    .bottom-link {
+      font-size: 16px;
+    }
+  }
+  
+  
+  /* =========================
+     MOBILE
+  ========================= */
+  
+  @media (max-width: 480px) {
+  
+    .login-page {
+      padding: 20px 15px;
+    }
+  
+    .login-card {
+      padding: 24px;
+      border-radius: 18px;
+    }
+  
+    .login-title {
+      font-size: 2rem;
+    }
+  
+    .login-subtitle {
+      font-size: 0.95rem;
+      margin-bottom: 25px;
+    }
+  
+    .input-group label {
+      font-size: 14px;
+    }
+  
+    .input-group input {
+      padding: 14px;
+      font-size: 14px;
+    }
+  
+    .login-btn {
+      padding: 14px;
+      font-size: 16px;
+    }
+  
+    .bottom-link {
+      font-size: 14px;
+    }
+  
+    .copyright {
+      font-size: 12px;
+      text-align: center;
+    }
   }
